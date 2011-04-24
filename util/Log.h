@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Object.hpp"
+#include "Object.h"
 
 using namespace lang;
 namespace util {
@@ -16,5 +16,5 @@ namespace util {
   private:
     int 
   };
-
+  
 }

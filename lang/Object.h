@@ -3,9 +3,7 @@ namespace lang {
     public:
         Object();
 	virtual ~Object();
-	virtual bool Equals(Object &o);
-	virtual bool operator==(Object &o) {
-	    return this == &o;
-	}
+	virtual bool Equals(Object &object);
+	virtual bool operator==(Object &object);
     };
 }
