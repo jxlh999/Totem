@@ -1,4 +1,5 @@
-#include "Object.h"
+#include "../../include/lang/Object.h"
+
 namespace lang {
   
   Object::Object() {
