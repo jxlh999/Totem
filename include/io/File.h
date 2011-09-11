@@ -3,7 +3,6 @@
 #include "Object.h"
 
 class File: public Object {
-	pubic :File();
 	File(char *path);
 	File(char *parent_path, char *child);
 	File(File& parent, char *child_path);
