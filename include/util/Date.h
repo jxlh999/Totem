@@ -1,8 +1,8 @@
 #include <iostream.h>
 
 namespace util {
-    class Date : public Object {
-    public:
+class Date: public Object {
+public:
 	void SetDate(Date date);
 	void SetYear(int year);
 	void SetMonth(int month);
@@ -19,8 +19,8 @@ namespace util {
 	int GetMinute();
 	int GetSecond();
 	~Date();
-    private:
+private:
 	Date();
-    }
+}
 
 }

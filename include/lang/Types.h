@@ -1,4 +1,3 @@
 typedef enum RETURN_VALUE {
-    OK,
-    ERROR
-}STATUS;
+	OK, ERROR
+} STATUS;
