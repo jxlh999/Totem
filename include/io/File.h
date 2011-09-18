@@ -1,8 +1,21 @@
-#include <iostream>
-#include <stdlib.h>
+/*
+ * File.h
+ *
+ *  Created on: Sep 18, 2011
+ *      Author: xiaolei
+ */
+
+#ifndef FILE_H_
+#define FILE_H_
+
 #include "Object.h"
 
-class File: public Object {
+namespace io {
+
+class File: public lang::Object {
+public:
+	File();
+	virtual ~File();
 	File(char *path);
 	File(char *parent_path, char *child);
 	File(File& parent, char *child_path);
@@ -60,5 +73,8 @@ private:
 	File(char *child_path, File, parent);
 	//void WriteObject(ObjectOutputStream s);
 	//void ReadObject(ObjectInputStream s);
-
 };
+
+}
+
+#endif /* FILE_H_ */

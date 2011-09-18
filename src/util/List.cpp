@@ -1,20 +1,20 @@
 /*
- * String.cpp
+ * List.cpp
  *
  *  Created on: Sep 18, 2011
  *      Author: xiaolei
  */
 
-#include "String.h"
+#include "List.h"
 
-namespace lang {
+namespace util {
 
-String::String() {
+List::List() {
 	// TODO Auto-generated constructor stub
 
 }
 
-String::~String() {
+List::~List() {
 	// TODO Auto-generated destructor stub
 }
 

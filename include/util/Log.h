@@ -1,8 +1,19 @@
-#include <stdio.h>
+/*
+ * Log.h
+ *
+ *  Created on: Sep 18, 2011
+ *      Author: xiaolei
+ */
 
-//using namespace lang;
+#ifndef LOG_H_
+#define LOG_H_
+
+#include <time.h>
+#include "Object.h"
+
 namespace util {
-class Log/*: public Object */{
+
+class Log: public lang::Object {
 public:
 	Log();
 	Log(int logLevel);
@@ -29,3 +40,5 @@ private:
 };
 
 }
+
+#endif /* LOG_H_ */

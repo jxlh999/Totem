@@ -1,13 +1,24 @@
-#include "../../include/util/Log.h"
-#include <string.h>
-#include <time.h>
+/*
+ * Log.cpp
+ *
+ *  Created on: Sep 18, 2011
+ *      Author: xiaolei
+ */
+#include "Log.h"
+
+namespace util {
 
 Log::Log() {
+	// TODO Auto-generated constructor stub
 	mCurrentLogLevel = LOG_LEVEL_ALL;
 }
 
 Log::Log(int logLevel) :
 	mCurrentLogLevel(logLevel) {
+}
+
+Log::~Log() {
+	// TODO Auto-generated destructor stub
 }
 
 void Log::SetCurrentLogLevel(int logLevel) {
@@ -65,4 +76,6 @@ void Log::E(const char *tag, const char *msg) {
 	} else {
 		// do nothing.
 	}
+}
+
 }

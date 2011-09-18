@@ -1,7 +1,18 @@
-#include <stdio.h>
+/*
+ * String.h
+ *
+ *  Created on: Sep 18, 2011
+ *      Author: xiaolei
+ */
+
+#ifndef STRING_H_
+#define STRING_H_
+
 #include "Object.h"
 
-class String: public Object {
+namespace lang {
+
+class String: public lang::Object {
 public:
 	String();
 	String(String& original);
@@ -15,6 +26,7 @@ public:
 	String(char *bytes, int offset, int length);
 	String(char *bytes, int length);
 	//String(StringBuilder& builder);
+	virtual ~String();
 	int Length();
 	boolean IsEmpty();
 	char CharAt(int index);
@@ -88,3 +100,7 @@ protected:
 	String(int offset, int count, char *value);
 	void GetChars(char *dst, int dst_begin);
 };
+
+}
+
+#endif /* STRING_H_ */

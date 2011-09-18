@@ -1,4 +1,15 @@
+/*
+ * Object.h
+ *
+ *  Created on: Sep 18, 2011
+ *      Author: xiaolei
+ */
+
+#ifndef OBJECT_H_
+#define OBJECT_H_
+
 namespace lang {
+
 class Object {
 public:
 	Object();
@@ -8,4 +19,7 @@ public:
 	virtual char* ToString();
 	virtual int HashCode();
 };
+
 }
+
+#endif /* OBJECT_H_ */

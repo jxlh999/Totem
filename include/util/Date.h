@@ -1,8 +1,21 @@
-#include <iostream.h>
+/*
+ * Date.h
+ *
+ *  Created on: Sep 18, 2011
+ *      Author: xiaolei
+ */
+
+#ifndef DATE_H_
+#define DATE_H_
+
+#include "Object.h"
 
 namespace util {
-class Date: public Object {
+
+class Date: public lang::Object {
 public:
+	Date();
+	virtual ~Date();
 	void SetDate(Date date);
 	void SetYear(int year);
 	void SetMonth(int month);
@@ -18,9 +31,15 @@ public:
 	int GetHour();
 	int GetMinute();
 	int GetSecond();
-	~Date();
 private:
-	Date();
-}
+	int mYear;
+	int mMonth;
+	int mDay;
+	int mHour;
+	int mMinute;
+	int mSecond;
+};
 
 }
+
+#endif /* DATE_H_ */
