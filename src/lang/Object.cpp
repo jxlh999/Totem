@@ -5,7 +5,7 @@
  *      Author: xiaolei
  */
 
-#include "Object.h"
+#include <Object.h>
 
 namespace lang {
 
@@ -16,14 +16,6 @@ Object::Object() {
 
 Object::~Object() {
 	// TODO Auto-generated destructor stub
-}
-
-bool Equals(Object &object) {
-	return this == &object;
-}
-
-bool operator==(Object &object) {
-	return Equals(object);
 }
 
 }

@@ -8,16 +8,28 @@
 #ifndef OBJECT_H_
 #define OBJECT_H_
 
+#include <iostream>
+#include <string>
+using namespace std;
+
 namespace lang {
 
 class Object {
 public:
 	Object();
 	virtual ~Object();
-	virtual bool Equals(Object &object);
-	virtual bool operator==(Object &object);
-	virtual char* ToString();
-	virtual int HashCode();
+	virtual bool Equals(Object &object) {
+		return this == &object;
+	}
+	virtual bool operator==(Object &object) {
+		return Equals(object);
+	}
+	virtual char* ToString() {
+		return NULL;
+	}
+	virtual int HashCode() {
+		return 0;
+	}
 };
 
 }

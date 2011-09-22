@@ -1,19 +1,19 @@
+VPATH = src/io src/lang src/util include/io include/lang include/util
+
 CXX = g++
 
-CXXFLAGS = -O2 -g -Wall -fmessage-length=0
+CXXFLAGS = -O2 -g -Wall -fmessage-length=0 -I include/io -I include/lang -I include/util
 
-OBJS = File.o Object.o String.o StringBuffer.o Date.o Iterable.o Log.o
+OBJS = main.o Object.o String.o
 
 LIBS =
 
-TARGET = totem
-
-INCLUDE = 
+TARGET = main
 
 $(TARGET):	$(OBJS)
 	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)
-
-all:	$(TARGET)
+	
+all: $(TARGET)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
